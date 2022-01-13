@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using System.Threading;
 
 namespace ExercisesFundamentals
@@ -222,8 +223,28 @@ namespace ExercisesFundamentals
            System.Console.WriteLine("Abrir arquivo:");
            Thread.Sleep(800);
            System.Console.WriteLine("Entre com o caminho do arquivo:(Ex C:\\....)");
+           System.Console.WriteLine("Aperte ESC para sair.");
+           var path = Console.ReadLine();
+           using (var file = new StreamReader(path))
+           {   Console.Clear();
+                System.Console.WriteLine(file);
+                System.Console.WriteLine("");
+           }
+
            
        }
-       static void EditorCriar(){}
+       static void EditorCriar(){
+                Console.Clear();
+                System.Console.WriteLine("Criar arquivo");
+                System.Console.WriteLine("Digite o texto abaixo e utilize ESC para sair.");
+                Thread.Sleep(800);
+
+               // while (Console.ReadKey() != ConsoleKeyInfo.ESCAPE )  Continuar daqui,criando um mapeamento de esc e a criacao e save do texto...
+                {
+                     
+                }
+
+
+       }
     }
 }
