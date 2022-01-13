@@ -24,7 +24,9 @@ namespace ExercisesFundamentals
             var option = int.Parse(Console.ReadLine());
 
             switch(option){
-            case 0 : Environment.Exit(0);break;
+            case 0 : System.Console.WriteLine("GoodBye!");
+             Thread.Sleep(1500); 
+             Environment.Exit(0);break;
             case 1 : CalculadoraMenu();break;
             case 2 : CronometroMenu();break;
             case 3 :EditorMenu();break;
@@ -179,28 +181,42 @@ namespace ExercisesFundamentals
            var onlyNumber = final.Substring(0,final.Length-1);
            var type = final.Substring(final.Length-1,1).ToLower();
            var time = int.Parse(onlyNumber);
-          
+            var i = 0;
            if(type == "m"){
 
               
               time = time*60;
            }
-            
-            while (time <= 0)
-            {
-                 Console.Clear();
-                System.Console.Write(time);
+           for ( i = time; i >= 0; i--)
+           {
+               Console.Clear();
+                System.Console.Write(i);
                 Thread.Sleep(1000);
-                time --;                                     //arrumar este loop descobrindo pq o programa não passa por ele
-               
-                 
-            }
-           
-            System.Console.WriteLine("caiu aqui");
+                
+           }
+            
             Thread.Sleep(1000);
             CronometroMenu();
        }
-       static void EditorMenu(){}
-       static void Editor(){}
+       static void EditorMenu(){
+           Console.Clear();
+           System.Console.WriteLine("Entre com uma da opções abaixo:");
+           Thread.Sleep(800);
+           System.Console.WriteLine(" 0 - Voltar ao menu principal");
+           System.Console.WriteLine("1 - Abrir arquivo");
+           System.Console.WriteLine("2 - Criar novo arquivo");
+           var option = char.Parse(Console.ReadLine());
+           switch (option)
+           {
+               case '0' : Menu();break;
+               case '1' : EditorAbrir();break;
+               case '2' : EditorCriar();break;
+               default: System.Console.WriteLine("Opção inválida!Retornando ao menu principal.");
+            Menu();break;
+           }
+
+       }
+       static void EditorAbrir(){}
+       static void EditorCriar(){}
     }
 }
