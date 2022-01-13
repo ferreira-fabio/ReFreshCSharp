@@ -216,7 +216,14 @@ namespace ExercisesFundamentals
            }
 
        }
-       static void EditorAbrir(){}
+       static void EditorAbrir(){
+
+           Console.Clear();
+           System.Console.WriteLine("Abrir arquivo:");
+           Thread.Sleep(800);
+           System.Console.WriteLine("Entre com o caminho do arquivo:(Ex C:\\....)");
+           
+       }
        static void EditorCriar(){}
     }
 }
