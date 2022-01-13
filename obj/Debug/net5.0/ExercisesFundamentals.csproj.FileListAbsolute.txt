@@ -1,0 +1,16 @@
+C:\dev\ExercisesFundamentals\bin\Debug\net5.0\ExercisesFundamentals.exe
+C:\dev\ExercisesFundamentals\bin\Debug\net5.0\ExercisesFundamentals.deps.json
+C:\dev\ExercisesFundamentals\bin\Debug\net5.0\ExercisesFundamentals.runtimeconfig.json
+C:\dev\ExercisesFundamentals\bin\Debug\net5.0\ExercisesFundamentals.runtimeconfig.dev.json
+C:\dev\ExercisesFundamentals\bin\Debug\net5.0\ExercisesFundamentals.dll
+C:\dev\ExercisesFundamentals\bin\Debug\net5.0\ref\ExercisesFundamentals.dll
+C:\dev\ExercisesFundamentals\bin\Debug\net5.0\ExercisesFundamentals.pdb
+C:\dev\ExercisesFundamentals\obj\Debug\net5.0\ExercisesFundamentals.csproj.AssemblyReference.cache
+C:\dev\ExercisesFundamentals\obj\Debug\net5.0\ExercisesFundamentals.GeneratedMSBuildEditorConfig.editorconfig
+C:\dev\ExercisesFundamentals\obj\Debug\net5.0\ExercisesFundamentals.AssemblyInfoInputs.cache
+C:\dev\ExercisesFundamentals\obj\Debug\net5.0\ExercisesFundamentals.AssemblyInfo.cs
+C:\dev\ExercisesFundamentals\obj\Debug\net5.0\ExercisesFundamentals.csproj.CoreCompileInputs.cache
+C:\dev\ExercisesFundamentals\obj\Debug\net5.0\ExercisesFundamentals.dll
+C:\dev\ExercisesFundamentals\obj\Debug\net5.0\ref\ExercisesFundamentals.dll
+C:\dev\ExercisesFundamentals\obj\Debug\net5.0\ExercisesFundamentals.pdb
+C:\dev\ExercisesFundamentals\obj\Debug\net5.0\ExercisesFundamentals.genruntimeconfig.cache
