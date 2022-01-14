@@ -239,7 +239,11 @@ namespace ExercisesFundamentals
                 System.Console.WriteLine("Digite o texto abaixo e utilize ESC para sair.");
                 Thread.Sleep(800);
 
-               // while (Console.ReadKey() != ConsoleKeyInfo.ESCAPE )  Continuar daqui,criando um mapeamento de esc e a criacao e save do texto...
+                do
+                {
+                    
+                } 
+                while (Console.ReadKey().Key != ConsoleKey.Escape );  //Continuar daqui,criando um mapeamento de esc e a criacao e save do texto...
                 {
                      
                 }
