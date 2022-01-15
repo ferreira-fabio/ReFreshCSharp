@@ -258,7 +258,7 @@ namespace ExercisesFundamentals
                     text+= Environment.NewLine;
                     
                 } 
-                while (Console.ReadKey().Key != ConsoleKey.Escape );  //Continuar daqui,criando um mapeamento de esc e a criacao e save do texto...
+                while (Console.ReadKey().Key != ConsoleKey.Escape ); 
                 
                 System.Console.WriteLine("Escreva onde gostaria de salvar o arquivo: ");
                 var path=Console.ReadLine();
