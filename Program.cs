@@ -203,7 +203,7 @@ namespace ExercisesFundamentals
            Console.Clear();
            System.Console.WriteLine("Entre com uma da opções abaixo:");
            Thread.Sleep(800);
-           System.Console.WriteLine(" 0 - Voltar ao menu principal");
+           System.Console.WriteLine("0 - Voltar ao menu principal");
            System.Console.WriteLine("1 - Abrir arquivo");
            System.Console.WriteLine("2 - Criar novo arquivo");
            var option = char.Parse(Console.ReadLine());
@@ -222,13 +222,23 @@ namespace ExercisesFundamentals
            Console.Clear();
            System.Console.WriteLine("Abrir arquivo:");
            Thread.Sleep(800);
-           System.Console.WriteLine("Entre com o caminho do arquivo:(Ex C:\\....)");
-           System.Console.WriteLine("Aperte ESC para sair.");
+           System.Console.WriteLine("Entre com o caminho do arquivo:(Ex C:/....)");
            var path = Console.ReadLine();
            using (var file = new StreamReader(path))
-           {   Console.Clear();
-                System.Console.WriteLine(file);
+           {   
+               do
+               {
+                   
+                
+               Console.Clear();
+                var read=file.ReadToEnd();
+                System.Console.WriteLine(read);
                 System.Console.WriteLine("");
+                System.Console.WriteLine("Pressione ESC Para voltar ao Menu");
+
+               }
+                while (Console.ReadKey().Key != ConsoleKey.Escape);
+                Menu();
            }
 
            
@@ -239,14 +249,30 @@ namespace ExercisesFundamentals
                 System.Console.WriteLine("Digite o texto abaixo e utilize ESC para sair.");
                 Thread.Sleep(800);
 
+                var text ="";
+             
+
                 do
                 {
+                    text+=Console.ReadLine();
+                    text+= Environment.NewLine;
                     
                 } 
                 while (Console.ReadKey().Key != ConsoleKey.Escape );  //Continuar daqui,criando um mapeamento de esc e a criacao e save do texto...
+                
+                System.Console.WriteLine("Escreva onde gostaria de salvar o arquivo: ");
+                var path=Console.ReadLine();
+
+                using (var streamwriter = new StreamWriter(path) )
                 {
+                  streamwriter.Write(text);
                      
                 }
+
+                System.Console.WriteLine("Salvo com sucesso!!");
+                System.Console.WriteLine("Retornado ao Menu");
+                Thread.Sleep(1000);
+                EditorMenu();
 
 
        }
