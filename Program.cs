@@ -231,8 +231,8 @@ namespace ExercisesFundamentals
                    
                 
                Console.Clear();
-                var read=file.ReadToEnd();
-                System.Console.WriteLine(read);
+                
+                System.Console.WriteLine(file.ReadToEnd());
                 System.Console.WriteLine("");
                 System.Console.WriteLine("Pressione ESC Para voltar ao Menu");
 
